@@ -16,6 +16,8 @@
 //= require jquery3
 //= require_tree .
 
+$(document).ready(function() {
+
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -40,9 +42,8 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-var slideIndex = 0;
-showSlides();
 
+// slideshow functions
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -53,6 +54,9 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+var slideIndex = 0;
+showSlides();
+
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -62,5 +66,8 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    setInterval(showSlides, 3000); // Change image every 5 seconds
 }
+
+
+});
