@@ -4,7 +4,7 @@
 Voila la vérité (https://kebabpower.herokuapp.com/)
 
 Comme d'hab,
-'''sh
+```sh
 bundle install
 rails server
-'''
+```
