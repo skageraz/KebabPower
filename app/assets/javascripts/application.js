@@ -23,7 +23,7 @@ $(document).ready(function() {
 
   //showSlides(slideIndex);
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  //document.getElementById("defaultOpen").click();
 });
 var slideIndex = 1;
 // Next/previous controls
